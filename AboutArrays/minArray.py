@@ -3,6 +3,7 @@
 '''
 
 class Solution(object):
+    # 二分法，时间复杂度O(logN)，空间复杂度O(1)
     def minArray(self, nums):
         left, right = 0, len(nums) - 1
         while left < right:
