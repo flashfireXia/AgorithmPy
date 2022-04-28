@@ -10,7 +10,7 @@ class Solution(object):
             mid = left + (right - left) // 2
             if nums[mid] > nums[right]:
                 left = mid + 1
-            elif nums[mid] < nums[left]:
+            elif nums[mid] < nums[right]:
                 right = mid
             else:
                 return min(nums[left: right])
